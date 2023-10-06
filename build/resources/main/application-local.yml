@@ -1,0 +1,10 @@
+spring:
+  config:
+    activate:
+      on-profile: local
+
+server:
+  port: 8081
+
+greeting:
+  message: local-locallocal

@@ -1,0 +1,9 @@
+spring:
+  config:
+    activate:
+      on-profile: test
+
+wow:
+  confirm: " 아하"
+  cancel: "에헤"
+  
