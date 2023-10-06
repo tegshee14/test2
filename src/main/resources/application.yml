@@ -1,0 +1,42 @@
+spring:
+  profiles:
+    group:
+     local: local,test
+     prod: prod,test
+    active: local
+
+
+
+  config:
+    messages:
+      basename: i18n/messages
+      encoding: UTF-8
+      cache-duration: 3
+
+  datasource:
+    drive-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://172.30.1.154:3306/isp_nhf?allowMultiQueries=true
+    username: isp_nhf
+    password: isp_nhf
+
+server:
+  port: 8083
+  servlet:
+    context-path: /
+
+logging:
+  level:
+    root: info
+    com.example.test: debug
+  file:
+    name: /logg/test.log
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+    rolling-file-name: "/logg/test-%d{yyyy-MM-dd}_%i.log"
+  file-pattern: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+  logback:
+    rollingpolicy:
+      max-file-size: 10B
+      max-history: 7
+      #file-name-pattern:  "/logg/test-%d{yyyy-MM-dd}_%i.log"
+

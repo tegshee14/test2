@@ -1,0 +1,4 @@
+alert:
+  confirm: "ok"
+  cancel: "cancel"
+  

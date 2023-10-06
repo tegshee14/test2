@@ -1,0 +1,5 @@
+2023-10-06T15:39:11.603+09:00  INFO 10132 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 9 class path changes (0 additions, 0 deletions, 9 modifications)
+2023-10-06T15:39:11.631+09:00  INFO 10132 --- [Thread-5] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-06T15:39:11.632+09:00  INFO 10132 --- [Thread-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-06T15:39:11.639+09:00  INFO 10132 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-06T15:39:11.652+09:00  INFO 10132 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
