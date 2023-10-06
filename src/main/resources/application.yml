@@ -27,16 +27,17 @@ server:
 logging:
   level:
     root: info
-    com.example.test: debug
+    com.example.test: warn
   file:
     name: /logg/test.log
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
-    rolling-file-name: "/logg/test-%d{yyyy-MM-dd}_%i.log"
+    #rolling-file-name: "/logg/test-%d{yyyy-MM-dd}_%i.log"
+    #ile: "/logg/test-%d{yyyy-MM-dd}_%i.log"
   file-pattern: "%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
   logback:
     rollingpolicy:
       max-file-size: 10B
       max-history: 7
-      #file-name-pattern:  "/logg/test-%d{yyyy-MM-dd}_%i.log"
+      file-name-pattern:  "/logg/test-%d{yyyy-MM-dd}_%i.log"
 
